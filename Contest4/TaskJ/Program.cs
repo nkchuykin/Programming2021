@@ -1,8 +1,8 @@
 ﻿using System;
 
-internal class Program
+internal static class Program
 {
-    public static void Main()
+    private static void Main(string[] args)
     {
         throw new NotImplementedException();
     }
