@@ -13,7 +13,8 @@ internal class Program
                     "Soldier" => new Soldier(),
                     "CoolerSoldier" => new CoolerSoldier(),
                     "ManInBlack" => new ManInBlack(),
-                    "ManInBlackBoss" => new ManInBlackBoss()
+                    "ManInBlackBoss" => new ManInBlackBoss(),
+                    _ => throw new NotImplementedException()
                 };
                 Console.WriteLine(soldier.Attack());
                 break;
@@ -21,7 +22,8 @@ internal class Program
                 var manInBlack = info[1] switch
                 {
                     "ManInBlack" => new ManInBlack(),
-                    "ManInBlackBoss" => new ManInBlackBoss()
+                    "ManInBlackBoss" => new ManInBlackBoss(),
+                    _ => throw new NotImplementedException()
                 };
                 Console.WriteLine(manInBlack.Attack());
                 break;
