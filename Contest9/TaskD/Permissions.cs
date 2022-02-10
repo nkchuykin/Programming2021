@@ -1,0 +1,3 @@
+internal enum Permissions
+{
+}
